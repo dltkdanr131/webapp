@@ -34,13 +34,26 @@
 				});
 			});
 		</script>
-		
-		<style>
+		<style type="text/css">
 			.fotorama_caption {
 				text-align : center;
 			}
+			</style>
+		<style type="text/css">
+			#video_canvus{
+			margin-top:0px;
+				margin-right:auto;
+				margin-bottom:0px;
+				margin-left:auto;
+				width:320px;
+				height:240px;
+			}
+			.content_style{
+				padding-right:0px;
+				padding-left:0px;
+			}
 		</style>
-		<style type = "text/css">
+		<style type="text/css">
 			#logo {
 				width: 176px;
 				height: 132px;
@@ -57,8 +70,7 @@
 				padding-top: 10px;
 			}
 		</style>
-		<style>
-			/* 대학교 소개용 */
+		<style type="text/css">
 			#pic_univ {
 				float : left;
 				margin-right : 10px;
@@ -78,10 +90,8 @@
 				font-weight: bold;
 				color: #950000;
 			}
-		</style>
-		
-		
-	</head>
+	</style>
+</head>
 	<body>
 		
 		<div data-role = "page" id = "main">
@@ -92,19 +102,19 @@
 			<div data-role = "content">
 				<ul data-role = "listview" data-inset = "true">
 					<li><a href = "#campus_images">
-						<img src = "pic/images/pic_i.png" alt = "" class = "ui-li-thumb" />
+						<img src = "images/pic_i.png" alt = "" class = "ui-li-thumb" />
 						<h3 class = "title_Style">캠퍼스 이미지</h3>
 					</a></li>
 					<li><a href = "#intro">
-						<img src = "pic/images/intro_i.png" alt = "" class = "ui-li-thumb"/>
+						<img src = "images/intro_i.png" alt = "" class = "ui-li-thumb"/>
 						<h3 class = "title_style">대학교 소개</h3>
 					</a></li>
-					<li><a href = "#">
-						<img src = "pic/images/movie_i.png" alt = "" class = "ui-li-thumb"/>
+					<li><a href = "#video_value">
+						<img src = "images/movie_i.png" alt = "" class = "ui-li-thumb"/>
 						<h3 class = "title_style">홍보동영상</h3>
 					</a></li>
 					<li><a href = "#">
-						<img src = "pic/images/map_i.png" alt = "" class = "ui-li-thumb"/>
+						<img src = "images/map_i.png" alt = "" class = "ui-li-thumb"/>
 						<h3 class = "title_style">캠퍼스 맵</h3>
 					</a></li>
 				</ul>
@@ -142,14 +152,17 @@
 				<h1>대학교 소개</h1>
 			</div>
 			<div data-role = "content" data-theme = "c">
-				<img class = "small" id = "pic_univ" src = "pic/images/univ.jpg" alt = "">
+				<img class = "small" id = "pic_univ" src = "images/univ.jpg" alt = "">
 				<h2>"<strong class = "bold_style">경운대학교</strong>"</h2>
 				<div class = "clear_both"></div> <!-- float 자르기 -->
 				
-				<p>경운대학교1</p>
-				<p>경운대학교2</p>
-				<p>경운대학교3</p>
-				<p>경운대학교4</p>
+				<p> 슬기롭고 바른 정신 경운 대학교 </p>
+				<p> 경운대학교 소개 경운대학교 소개 경운대학교 소개 경운대학교 소개 경운대학교 소개 경운대학교 소개 경운대학교 소개 경운대학교 소개 경운대학교 소개 경운대학교 소개</p>
+				<p> 경운대학교 소개 2 경운대학교 소개 2 경운대학교 소개 2 경운대학교 소개 2 경운대학교 소개 2 경운대학교 소개 2 경운대학교 소개 2 경운대학교 소개 2 경운대학교 소개 2
+				 경운대학교 소개 2 경운대학교 소개 2 경운대학교 소개 2 경운대학교 소개 2 경운대학교 소개 2 경운대학교 소개 2 경운대학교 소개 2 경운대학교 소개 2 경운대학교 소개 2 경운대학교 소개 2
+				  경운대학교 소개 2 경운대학교 소개 2 경운대학교 소개 2 경운대학교 소개 2 경운대학교 소개 2 경운대학교 소개 2 경운대학교 소개 2 경운대학교 소개 2 경운대학교 소개 2 경운대학교 소개 2
+				     경운대학교 소개 2 경운대학교 소개 2 경운대학교 소개 2 경운대학교 소개 2</p>
+				<p> 경운대학교 총장</p>
 				
 				
 			</div>
@@ -157,6 +170,48 @@
 				<h2>버추얼 대학교</h2>
 			</div>
 		</div>
-	
+		<body>
+		<div data-role="page" id="video_value" data-add-back-btn="true">
+			<div data-role="header" data-theme="b">
+				<a href="index.html" rel="external" data-icon="home" data-direction="reverse">Home</a>
+				<h1> 최고의 가치 </h1>
+			</div>
+		<div data-role="content" data-theme="c" class="content_style">
+			<div id="vedio_canvas">
+				<div>
+				 <video class="video-js vjs-default-skin" width="320" height="240"
+				 controls preload="auto" data-setup="{}">
+					<source src="movie/movie.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/>
+					<source src="movie/movie.ogv" type='video/ogv; codecs="theora, vorbis"'/>
+					<source src="movie/movie.webm" type='video/webm; codecs="vp8, vorbis"'/>
+					</video>
+			</div>
+			<div>
+				<video class="video-js vjs-default-skin" width="320" height="240"
+				 controls preload="auto" data-setup="{}">
+				 <source src="movie/Adele - Rolling In The Deep.mp4">
+				 </video>
+			</div>
+			<div>
+				<video class="video-js vjs-default-skin" width="320" height="240"
+				 controls preload="auto" data-setup="{}">
+				 <source src="movie/IU - My old story.mp4">
+				 </video>
+		</div>
+			<p class="vjs-no-movie">
+						<strong>비디오 다운로드:</strong>
+						<a href="movie/movie.mp4"
+						target="_blank">MP4</a>
+						<a href="movie/IU - My old story.mp4"
+						target="_blank">IU</a>
+						<a href="movie/Adele - Rolling In The Deep.mp4"
+						target="_blank">Adele</a>
+					<br>
+				</p>
+	</div>
+	<div data-role="footer" data-theme="b">
+		<h2> 가상 대학교 </h2>
+	</div>
+</div>
 	</body>
 </html>
