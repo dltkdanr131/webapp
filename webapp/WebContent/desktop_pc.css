@@ -1,0 +1,7 @@
+@CHARSET "utf-8";
+body{
+	background-color: #fff;	/* 배경을 흰색으로 */
+}
+#mobile_view{
+	display : none;	/* mobile_view 선택자 영역은 화면에서 생략 */
+}

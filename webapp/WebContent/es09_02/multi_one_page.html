@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Multi_One_Page</title>
+		<meta name = "viewport" content = "width=device-width, initial-scale=1">
+		<link rel = "stylesheet" href = "https://code.jquery.com/ui/1.12.0-rc.2/themes/smoothness/jquery-ui.css"/>
+		<link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+		<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.min.js"></script>
+		<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	<body>
+		<div data-role = "page" id = "main">
+			<div data-role = "heder" data-them="b" >
+				<h1>메인페이지</h1>
+			</div>
+			<div data-role = "content">
+				<h2>메인페이지입니다.</h2>
+				<p><a href = "#sub" data-transition = "slide">서브페이지</a></p>
+			</div>
+			<div data-role="footer">
+				<h3>Footer입니다.</h3>
+			</div>
+		</div>
+		<div data-role = "page" id = "sub">
+			<div data-role = "header">
+				<h1>서브페이지</h1>
+			</div>
+			<div data-role = "content">
+				<h2>서브페이지</h2>
+				<p><a href = "#main" data-transition = "slide" data-direction = "reserve">메인페이지</a>
+			</div>
+			<div data-role = "footer">
+				<h2>Footer입니다.</h2>
+			</div>
+			
+		</div>
+		
+	</body>
+</html>

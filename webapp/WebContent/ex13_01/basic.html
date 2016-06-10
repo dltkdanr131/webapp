@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>basic</title>
+
+	</head>
+	<body>
+		<script type="text/javascript">
+			// 변수 연습
+			var iNum = 3;
+			iNum = iNum + 5;
+			document.write("<p>" + iNum + "</p>");
+			var strColor = "파랑색";
+			document.write("<p>" + strColor + "</p>");
+			
+			// 배열 연습
+			var strDrink = new Array();
+			strDrink[0] = "Coffee";
+			strDrink[1] = "BlackTea";
+			strDrink[2] = "GreenTea";
+			
+			// 반복문 연습
+			var iCount = 0;
+			for(iCount = 0; iCount <= 2; iCount++){
+				document.write("<p>" + "number : " + iCount + "beverage : " + strDrink[iCount] + "</p>");
+			} 
+			
+			// 판단문 연습
+			var dtDate = new Data();
+			var dtHour = dtDate.getHours();
+			if(dtHour >= 6 && dtHour <= 10)
+				document.write("<b>Good Morning!</b>");
+			else
+				document.write("<b>How are you?</b>");
+		</script>
+	</body>
+</html>
